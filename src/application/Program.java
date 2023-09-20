@@ -1,5 +1,7 @@
 package application;
 
+import chess.ChessMatch;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -8,6 +10,8 @@ public class Program {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
 
 
     }
