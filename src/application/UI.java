@@ -1,9 +1,9 @@
 package application;
 
-import chess.ChessMatch;
-import chess.ChessPiece;
-import chess.ChessPosition;
-import chess.enums.Color;
+import chessLayer.ChessMatch;
+import chessLayer.ChessPiece;
+import chessLayer.ChessPosition;
+import chessLayer.enums.Color;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;
@@ -54,6 +54,9 @@ public class UI {
         printCapturedPieces(captured);
         System.out.println("Turn: " + chessMatch.getTurn());
         System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+        if (chessMatch.getCheck()){
+            System.out.println("CHECK!");
+        }
     }
 
     public static void printBoard(ChessPiece[][] pieces) {

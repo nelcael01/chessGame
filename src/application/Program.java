@@ -1,9 +1,9 @@
 package application;
 
-import chess.ChessMatch;
-import chess.ChessPiece;
-import chess.ChessPosition;
-import chess.exceptions.ChessException;
+import chessLayer.ChessMatch;
+import chessLayer.ChessPiece;
+import chessLayer.ChessPosition;
+import chessLayer.exceptions.ChessException;
 
 import java.util.*;
 
